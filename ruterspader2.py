@@ -1,0 +1,1 @@
+Fråga = int(input("Vilket kort vill du"))

@@ -1,4 +1,5 @@
 run = 0
+gissningar = 0
 while run == 0:
     try: 
         gissa = int(input("Gissa ett nummer mellan 1 - 4 "))
@@ -6,18 +7,15 @@ while run == 0:
         print("Du måste välja en siffra")
     import random
     a = random.randint(1,4)
-    if a = 1
-        1 = Hjärter
-    if a = 2
-        2 = Ruter
-    if a = 3
-        3 = Spader
-    if a = 4
-        4 = Klöver
-        if gissa == a:
-            print("rätt")
-            run = 1
-        else:
-            print("fel")
+    if gissa == a:
+        gissningar = gissningar + 1
+        print("rätt")
+        run = 1
+        print("antal gissningar", gissningar)
+    else:
+        print(a)
+        print("fel")
+        gissningar = gissningar + 1
+        print ("antal gissningar", gissningar)
 else:
     print("Tack för spelet")
