@@ -3,7 +3,7 @@ print("Finns i sjön!")
 fråga = 0
 while fråga != 5:
     try:
-        fråga = int(input("Vilket kort vill du fråga efter (1 -4) "))
+        fråga = int(input("Vilket kort vill du fråga efter (1-4)? "))
     except:
         print("Skriv ett nummer, försök igen")
     import random
@@ -11,7 +11,7 @@ while fråga != 5:
     print(aikort)
     if fråga == aikort:   
         hand.append(aikort)
-        print("i din hand har du", hand)
+        print("kort i din hand =", hand.count(1))
     else:
         print("finns i sjön")
 else:
